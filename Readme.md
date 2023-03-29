@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 - Студент: [Дмитрий Васильев](https://up.htmlacademy.ru/adaptive/28/user/1814593).
-- Наставник: [Анна Лисененкова](https://up.htmlacademy.ru/htmlcss/36/user/85590).пше
+- Наставник: [Анна Лисененкова](https://up.htmlacademy.ru/htmlcss/36/user/85590).
 
 ---
 

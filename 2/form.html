@@ -2,23 +2,20 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Кэт энерджи</title>
   <base href="https://htmlacademy-adaptive.github.io/1814593-cat-energy-28/2/">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" alt="Логотип Кэт энерджи">
+    <a class="page-header__logo logo logo--image" href="index.html">
+      <img class="logo__pic" src="#" alt="Логотип Кэт энерджи">
     </a>
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-text" src="#" alt="Cat energy">
+    <a class="page-header__logo logo logo--type" href="index.html">
+      <img class="logo__text" src="#" alt="Cat energy">
     </a>
     <nav class="page-header__navigation navigation">
-      <button class="navigation__button">
-        <span class="visually-hidden">Открывает и закрывает меню</span>
-      </button>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
@@ -31,12 +28,15 @@
         </li>
       </ul>
     </nav>
+    <button class="page-header__burger burger">
+      <span class="visually-hidden">Открывает и закрывает меню</span>
+    </button>
   </header>
   <main class="main-inner">
     <section class="main-inner__program program">
       <h1 class="program__title">Подбор программы</h1>
       <p class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="program__questionnaire questionnaire" action="https://echo.htmlacademy.ru" method="get">
+      <form class="program__questionnaire questionnaire" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="questionnaire__group">
           <legend class="questionnaire__sub-title visually-hidden">Информация о вашем коте</legend>
           <label class="questionnaire__label" for="name">
@@ -59,21 +59,21 @@
               <label class="questionnaire__label" for="slim">
                 <input class="questionnaire__input visually-hidden" type="radio" id="slim" name="program" value="slim" checked>
                 <span class="questionnaire__control-mark"></span>
-                <spam class="questionnaire__control-label">Похудение</spam>
+                <span class="questionnaire__control-label">Похудение</span>
               </label>
             </li>
             <li class="questionnaire__item">
               <label class="questionnaire__label" for="weight-gain">
                 <input class="questionnaire__input visually-hidden" type="radio" id="weight-gain" name="program" value="weight-gain">
                 <span class="questionnaire__control-mark"></span>
-                <spam class="questionnaire__control-label">Набор массы</spam>
+                <span class="questionnaire__control-label">Набор массы</span>
               </label>
             </li>
             <li class="questionnaire__item">
-              <label class="questionnaire__label" for="slim">
-                <input class="questionnaire__input visually-hidden" type="radio" id="slim" name="program" value="help">
+              <label class="questionnaire__label" for="advice">
+                <input class="questionnaire__input visually-hidden" type="radio" id="advice" name="program" value="help">
                 <span class="questionnaire__control-mark"></span>
-                <spam class="questionnaire__control-label">Не знаю (Нужен ваш совет)</spam>
+                <span class="questionnaire__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -84,14 +84,13 @@
             <input class="questionnaire__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
           </label>
           <label class="questionnaire__label" for="phone">Телефон:*
-            <input class="questionnaire__input" type="tel" id="email" name="phone" placeholder="8 (960) 900-60-90">
+            <input class="questionnaire__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
         <fieldset class="questionnaire__group">
           <legend class="questionnaire__sub-title">Комментарий</legend>
-          <label class="questionnaire__label" for="comment">
-            <textarea class="questionnaire__text-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
+          <label class="questionnaire__label visually-hidden" for="comment">Позволит нам более качественно подобрать программу питания для Вашего питомца</label>
+          <textarea class="questionnaire__text-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="questionnaire__group">
           <legend class="questionnaire__sub-title">Дополнительно</legend>
@@ -140,7 +139,7 @@
     </section>
     <section class="page-footer__map-footer map-footer">
       <h2 class="visually-hidden">Карта с адресом</h2>
-      <img class="map-footer__image" src="#" alt="Карта" />
+      <img class="map-footer__image" src="#" alt="Карта">
     </section>
     <a class="page-footer__link-logo" href="index.html"></a>
     <section class="page-footer__social social-footer">

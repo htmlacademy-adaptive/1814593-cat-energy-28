@@ -3,5 +3,34 @@
   --main-font: "Oswald", sans-serif;
   --additional-font: "Lato", sans-serif;
   // Цветовая палитра макета
-  --base-color: #68b738;
+  // Оттенки серого
+  --gray-basic: #f2f2f2;
+  --gray-special: #eaeaea;
+  --gray-pale: #ebebeb;
+  --gray-light: #e7e7e7;
+  --grayish: #d9d9d9;
+  --gray: #cdcdcd;
+  --gray-semi-dark: #666666;
+  --gray-dark: #444444;
+  --gray-darker: #222222;
+  --gray-deep: #111111;
+  // Акцентные цвета
+  --bright: #68b738;
+  --bright-deep: #5eaa2f;
+  --danger: #ff8282;
+  // Цвета по назначению
+  --color-font: #000000;
+  --color-btn-font: #ffffff;
+  --color-text-font: var(--gray-dark);
+  --color-address-font: var(--gray-deep);
+  --color-btn-bg: var(--bright);
+  --color-btn-states: var(--bright-deep);
+  --color-accent-bg: var(--bright);
+  --color-bg-blocks: var(--gray-basic);
+  --color-bg-special: var(--gray-special);
+  --color-error: var(--danger);
+  --color-input-bg: #ffffff;
+  --color-input-border: var(--gray-light);
+  --color-input-border-special: var(--gray);
 }
+

@@ -1,0 +1,47 @@
+.example {
+  background-color: var(--color-bg-special);
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: math.div(40, 36);
+  margin: 0;
+}
+
+.example__text {
+  font-family: var(--additional-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: math.div(18, 14);
+  color: var(--color-text-font);
+  margin: 0;
+}
+
+.example__list {
+  margin: 0;
+}
+
+.example__term {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: math.div(24, 24);
+}
+
+.example__definition {
+  font-family: var(--additional-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: math.div(12, 12);
+  color: var(--color-text-font);
+  margin: 0;
+}
+
+.example__text-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: math.div(20, 14);
+  text-transform: uppercase;
+  margin: 0;
+}
+

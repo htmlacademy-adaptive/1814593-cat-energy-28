@@ -1,0 +1,15 @@
+.program__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: lh(36, 36);
+  color: var(--color-font);
+  margin: 0;
+}
+
+.program__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: lh(18, 14);
+  text-transform: uppercase;
+  color: var(--color-font);
+}

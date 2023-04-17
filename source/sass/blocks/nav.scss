@@ -1,0 +1,17 @@
+.nav {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: lh(20, 20);
+  text-transform: uppercase;
+}
+
+.nav__list {
+  @include list-reset;
+}
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-font);
+}

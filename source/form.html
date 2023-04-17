@@ -4,26 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
+    <h1 class="visually-hidden">Интернет-магазин питания для котов Cat Energy</h1>
     <a class="page-header__logo logo logo--image" href="index.html">
-      <img class="logo__pic" src="#" alt="Логотип Кэт энерджи">
+      <img class="logo__pic" src="./img/logo-mobile.svg" alt="Логотип Кэт энерджи">
     </a>
     <a class="page-header__logo logo logo--type" href="index.html">
-      <img class="logo__text" src="#" alt="Cat energy">
+      <img class="logo__text" src="./img/logo-text.svg" alt="Cat energy">
     </a>
-    <nav class="page-header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+    <nav class="page-header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -31,139 +33,141 @@
       <span class="visually-hidden">Открывает и закрывает меню</span>
     </button>
   </header>
-  <main class="main-inner">
+  <main class="main-inner main-container">
     <section class="main-inner__program program">
       <h1 class="program__title">Подбор программы</h1>
       <p class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="program__questionnaire questionnaire" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="questionnaire__group">
-          <legend class="questionnaire__sub-title visually-hidden">Информация о вашем коте</legend>
-          <label class="questionnaire__label" for="name">
-            <span class="questionnaire__signature">Имя:*</span>
-            <input class="questionnaire__input" type="text" id="name" name="name" placeholder="Барсик">
+      <form class="program__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__group">
+          <legend class="form__sub-title visually-hidden">Информация о вашем коте</legend>
+          <label class="form__label" for="name">
+            <span class="form__signature">Имя:*</span>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
           </label>
-          <label class="questionnaire__label" for="weight">
-            <span class="questionnaire__signature">Вес (кг):*</span>
-            <input class="questionnaire__input" type="text" id="weight" name="weight" placeholder="7">
+          <label class="form__label" for="weight">
+            <span class="form__signature">Вес (кг):*</span>
+            <input class="form__input" type="text" id="weight" name="weight" placeholder="7">
           </label>
-          <label class="questionnaire__label" for="age">
-            <span class="questionnaire__signature">Возраст (лет):</span>
-            <input class="questionnaire__input" type="text" id="age" name="age" placeholder="7">
+          <label class="form__label" for="age">
+            <span class="form__signature">Возраст (лет):</span>
+            <input class="form__input" type="text" id="age" name="age" placeholder="7">
           </label>
         </fieldset>
-        <fieldset class="questionnaire__group">
-          <legend class="questionnaire__sub-title visually-hidden">Выбор программы</legend>
-          <ul class="questionnaire__list">
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="slim">
-                <input class="questionnaire__input visually-hidden" type="radio" id="slim" name="program" value="slim" checked>
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Похудение</span>
+        <fieldset class="form__group">
+          <legend class="form__sub-title visually-hidden">Выбор программы</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="slim">
+                <input class="form__input visually-hidden" type="radio" id="slim" name="program" value="slim" checked>
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Похудение</span>
               </label>
             </li>
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="weight-gain">
-                <input class="questionnaire__input visually-hidden" type="radio" id="weight-gain" name="program" value="weight-gain">
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Набор массы</span>
+            <li class="form__item">
+              <label class="form__label" for="weight-gain">
+                <input class="form__input visually-hidden" type="radio" id="weight-gain" name="program" value="weight-gain">
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Набор массы</span>
               </label>
             </li>
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="advice">
-                <input class="questionnaire__input visually-hidden" type="radio" id="advice" name="program" value="help">
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Не знаю (Нужен ваш совет)</span>
+            <li class="form__item">
+              <label class="form__label" for="advice">
+                <input class="form__input visually-hidden" type="radio" id="advice" name="program" value="help">
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="questionnaire__group">
-          <legend class="questionnaire__sub-title">Контактные данные (владельца кота)</legend>
-          <label class="questionnaire__label" for="email">E-mail:*
-            <input class="questionnaire__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+        <fieldset class="form__group">
+          <legend class="form__sub-title">Контактные данные (владельца кота)</legend>
+          <label class="form__label" for="email">E-mail:*
+            <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
           </label>
-          <label class="questionnaire__label" for="phone">Телефон:*
-            <input class="questionnaire__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+          <label class="form__label" for="phone">Телефон:*
+            <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
-        <fieldset class="questionnaire__group">
-          <legend class="questionnaire__sub-title">Комментарий</legend>
-          <label class="questionnaire__label visually-hidden" for="comment">Позволит нам более качественно подобрать программу питания для Вашего питомца</label>
-          <textarea class="questionnaire__text-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="form__group">
+          <legend class="form__sub-title">Комментарий</legend>
+          <label class="form__label visually-hidden" for="comment">Позволит нам более качественно подобрать программу питания для Вашего питомца</label>
+          <textarea class="form__text-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="questionnaire__group">
-          <legend class="questionnaire__sub-title">Дополнительно</legend>
-          <ul class="questionnaire__list">
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="sweetener">
-                <input class="questionnaire__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Сахарозаменитель</span>
+        <fieldset class="form__group">
+          <legend class="form__sub-title">Дополнительно</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="sweetener">
+                <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="water">
-                <input class="questionnaire__input visually-hidden" id="water" type="checkbox" name="water">
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Питьевая вода</span>
+            <li class="form__item">
+              <label class="form__label" for="water">
+                <input class="form__input visually-hidden" id="water" type="checkbox" name="water">
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Питьевая вода</span>
               </label>
             </li>
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="milk">
-                <input class="questionnaire__input visually-hidden" id="milk" type="checkbox" name="milk">
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Молоко</span>
+            <li class="form__item">
+              <label class="form__label" for="milk">
+                <input class="form__input visually-hidden" id="milk" type="checkbox" name="milk">
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Молоко</span>
               </label>
             </li>
-            <li class="questionnaire__item">
-              <label class="questionnaire__label" for="vitamins">
-                <input class="questionnaire__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-                <span class="questionnaire__control-mark"></span>
-                <span class="questionnaire__control-label">Витамины</span>
+            <li class="form__item">
+              <label class="form__label" for="vitamins">
+                <input class="form__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+                <span class="form__control-mark"></span>
+                <span class="form__control-label">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="questionnaire__button-link button-link" type="submit">Отправить заявку</button>
-        <p class="questionnaire__text">* — Обязательные поля</p>
+        <button class="form__btn-link btn-link" type="submit">Отправить заявку</button>
+        <p class="form__text">* — Обязательные поля</p>
       </form>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__partnership-footer partnership-footer">
-      <h2 class="partnership-footer__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="partnership-footer__address">
-        <p class="partnership-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="page-footer__partnership partnership">
+      <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <address class="partnership__address">
+        <p class="partnership__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </address>
     </section>
-    <section class="page-footer__map-footer map-footer">
+    <section class="page-footer__map map">
       <h2 class="visually-hidden">Карта с адресом</h2>
-      <img class="map-footer__image" src="#" alt="Карта">
+      <img class="map__image" src="#" alt="Карта">
     </section>
-    <a class="page-footer__link-logo" href="index.html"></a>
-    <section class="page-footer__social social-footer">
+    <a class="page-footer__logo logo" href="index.html">
+      <img class="logo__text" src="./img/logo-text.svg" alt="Cat energy">
+    </a>
+    <section class="page-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-footer__list">
-        <li class="social-footer__item">
-          <a class="social-footer__link" href="#">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">VKontakte</span>
           </a>
         </li>
-        <li class="social-footer__item">
-          <a class="social-footer__link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
-        <li class="social-footer__item">
-          <a class="social-footer__link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
       </ul>
     </section>
-    <section class="page-footer__htmlacademy htmlacademy">
-      <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <h2 class="htmlacademy__title">HTML Academy</h2>
+    <section class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <h2 class="copyright__title">HTML Academy</h2>
       </a>
     </section>
   </footer>

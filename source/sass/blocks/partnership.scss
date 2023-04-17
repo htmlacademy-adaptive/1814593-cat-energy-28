@@ -1,0 +1,16 @@
+.partnership__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: lh(20, 16);
+  text-transform: uppercase;
+  color: var(--color-address-font);
+}
+
+.partnership__text {
+  font-family: var(--additional-font);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: lh(20, 14);
+  color: var(--color-text-font);
+}

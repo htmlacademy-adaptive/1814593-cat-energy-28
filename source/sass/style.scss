@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+// миксины и переменные
+@import "./mixins.scss";
+@import "./variables.scss";
+
+// шрифты базовые стили
+@import "./global/fonts.scss";
+@import "./global/custom-properties.scss";
+@import "./global/global.scss";
+
+// стили БЭМ-блоков
+@import "./blocks/burger.scss";
+@import "./blocks/btn-link.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/example.scss";
+@import "./blocks/how-it-works.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/map.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/nutrtition.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/partnership.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social.scss";
+@import "./blocks/main-inner.scss";
+@import "./blocks/program.scss";
+@import "./blocks/form.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/product-cards.scss";
+@import "./blocks/marketing.scss";

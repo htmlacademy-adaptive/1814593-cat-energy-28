@@ -258,7 +258,7 @@ body {
 }
 
 .page-header {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--main-font);
 }
 
 .partnership__title {

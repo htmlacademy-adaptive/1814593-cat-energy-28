@@ -1,13 +1,10 @@
-// для подключения модуля math в scss
-@use "sass:math";
-
 // миксины и переменные
 @import "./mixins.scss";
 @import "./variables.scss";
 
 // шрифты базовые стили
 @import "./global/fonts.scss";
-@import "./custom-properties.scss";
+@import "./global/custom-properties.scss";
 @import "./global/global.scss";
 
 // стили БЭМ-блоков

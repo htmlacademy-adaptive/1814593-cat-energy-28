@@ -1,3 +1,10 @@
+// для подключения модуля math в scss
+@use "sass:math";
+
+@function lh($lhpx, $fz) {
+  @return #{math.div($lhpx, $fz)};
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;

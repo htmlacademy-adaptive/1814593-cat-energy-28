@@ -5,7 +5,7 @@
 .product-cards__sub-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: math.div(20, 16);
+  line-height: lh(20, 16);
   text-transform: uppercase;
   margin: 0;
 }
@@ -14,7 +14,7 @@
   font-family: var(--additional-font);
   font-weight: 400;
   font-size: 12px;
-  line-height: math.div(16, 12);
+  line-height: lh(16, 12);
   color: var(--color-text-font);
 }
 
@@ -27,14 +27,14 @@
   font-family: var(--additional-font);
   font-weight: 400;
   font-size: 12px;
-  line-height: math.div(16, 12);
+  line-height: lh(16, 12);
   color: var(--color-text-font);
 }
 
 .product-cards__title {
   font-weight: 400;
   font-size: 24px;
-  line-height: math.div(24, 24);
+  line-height: lh(24, 24);
   color: var(--color-font);
 }
 

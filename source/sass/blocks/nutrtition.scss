@@ -2,13 +2,13 @@
   margin: 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: math.div(36, 36);
+  line-height: lh(36, 36);
 }
 
 .nutrition__text {
   font-weight: 400;
   font-size: 14px;
-  line-height: math.div(14, 14);
+  line-height: lh(14, 14);
   text-transform: uppercase;
 }
 
@@ -27,7 +27,7 @@
 .nutrition__sub-title {
   font-weight: 400;
   font-size: 24px;
-  line-height: math.div(37, 24);
+  line-height: lh(37, 24);
   text-transform: uppercase;
   margin: 0;
 }
@@ -36,7 +36,7 @@
   font-family: var(--additional-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: math.div(18, 14);
+  line-height: lh(18, 14);
   color: var(--color-text-font);
   margin: 0;
 }
@@ -44,7 +44,7 @@
 .nutrition__link {
   font-weight: 400;
   font-size: 16px;
-  line-height: math.div(16, 16);
+  line-height: lh(16, 16);
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-font);

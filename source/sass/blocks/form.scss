@@ -6,7 +6,7 @@
 .form__signature {
   font-weight: 400;
   font-size: 16px;
-  line-height: math.div(18, 16);
+  line-height: lh(18, 16);
   text-transform: uppercase;
   color: var(--color-text-font);
 }
@@ -20,7 +20,7 @@
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: math.div(18, 16);
+  line-height: lh(18, 16);
   text-transform: uppercase;
   color: var(--color-text-font);
 }
@@ -28,14 +28,14 @@
 .form__label {
   font-weight: 400;
   font-size: 16px;
-  line-height: math.div(18, 16);
+  line-height: lh(18, 16);
   text-transform: uppercase;
 }
 
 .form__sub-title {
   font-weight: 400;
   font-size: 24px;
-  line-height: math.div(26, 24);
+  line-height: lh(26, 24);
   color: var(--color-font);
 }
 
@@ -47,7 +47,7 @@
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: math.div(18, 16);
+  line-height: lh(18, 16);
   text-transform: uppercase;
   color: var(--color-text-font);
 }
@@ -56,6 +56,6 @@
   font-family: var(--additional-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: math.div(16, 14);
+  line-height: lh(16, 14);
   margin: 0;
 }

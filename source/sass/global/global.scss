@@ -5,7 +5,7 @@ html {
 body {
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: math.div(18, 14);
+  line-height: lh(18, 14);
   color: #000000;
   background-color: #ffffff;
   margin: 0;

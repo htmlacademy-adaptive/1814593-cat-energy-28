@@ -15,3 +15,17 @@
   text-decoration: none;
   color: var(--color-font);
 }
+
+@media (min-width: $tablet-width) {
+  .nav {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: lh(24, 18);
+    text-transform: uppercase;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+}

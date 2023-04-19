@@ -1,3 +1,10 @@
 .page-header {
-  font-family: var(--main-font);
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    display: flex;
+  }
 }

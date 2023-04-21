@@ -20,12 +20,26 @@
   .nav {
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: lh(24, 18);
     text-transform: uppercase;
   }
 
   .nav__list {
+    @include list-reset;
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: lh(30, 20);
+    text-transform: uppercase;
+    color: var(--color-btn-font);
+    background-color: var(--color-accent-bg);
+    margin-left: auto;
   }
 }

@@ -1,1 +1,33 @@
 // скоро здесь будут стили, наверно)))
+.page-footer__partnership {
+  padding: 26px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+  }
+
+  .page-footer__partnership {
+    padding: 56px 40px;
+    grid-column: 1 / -1;
+  }
+
+  .page-footer__map {
+    grid-column: 1 / -1;
+  }
+
+  .page-footer__logo {
+    grid-column: 1 / 2;
+  }
+
+  .page-footer__social {
+    grid-column: 2 / 3;
+  }
+
+  .page-footer__copyright {
+    grid-column: 3 / -1;
+    justify-self: end;
+  }
+}

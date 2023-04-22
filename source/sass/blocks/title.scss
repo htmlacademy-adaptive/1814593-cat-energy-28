@@ -1,0 +1,13 @@
+.title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: lh(36, 36);
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: lh(60, 60);
+  }
+}

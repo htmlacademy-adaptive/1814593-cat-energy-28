@@ -1,7 +1,38 @@
 .form__group {
   border: none;
   padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
 }
+
+.form__group--pet-info {
+  margin-bottom: 24px;
+}
+
+.form__group--additional {
+  margin-bottom: 40px;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: lh(18, 16);
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 13px;
+  position: relative;
+}
+
+.form__label--programs {
+  padding: 0 0 0 45px;
+}
+
+.form__label--options {
+  padding: 0 0 0 46px;
+}
+
 
 .form__signature {
   font-weight: 400;
@@ -9,6 +40,7 @@
   line-height: lh(18, 16);
   text-transform: uppercase;
   color: var(--color-text-font);
+  align-self: center;
 }
 
 .form__input {
@@ -25,18 +57,64 @@
   color: var(--color-text-font);
 }
 
-.form__label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: lh(18, 16);
-  text-transform: uppercase;
+.form__group--program-type {
+  margin-bottom: 19px;
 }
 
-.form__sub-title {
+.form__list {
+  @include list-reset;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.form__control-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-input-border-special);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.form__control-mark--checkbox {
+  border-radius: 0;
+}
+
+.form__input[type="radio"]:checked + .form__control-mark::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--color-btn-bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__input[type="checkbox"]:checked + .form__control-mark::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--color-btn-bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__title {
   font-weight: 400;
   font-size: 24px;
   line-height: lh(26, 24);
   color: var(--color-font);
+  margin-bottom: 40px;
 }
 
 .form__text-comment {
@@ -58,4 +136,18 @@
   font-size: 14px;
   line-height: lh(16, 14);
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list--additional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list--additional {
+    display: flex;
+    justify-content: space-between;
+  }
 }

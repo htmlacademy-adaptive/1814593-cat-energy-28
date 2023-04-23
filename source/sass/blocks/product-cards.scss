@@ -8,3 +8,19 @@
   line-height: lh(24, 24);
   color: var(--color-font);
 }
+
+@media (min-width: $tablet-width) {
+  .product-cards__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-cards__list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
+  }
+}

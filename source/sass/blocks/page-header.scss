@@ -1,9 +1,7 @@
 .page-header {
   background-color: #ffffff;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }

@@ -1,8 +1,23 @@
+.nutrition__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
 .nutrition__text {
   font-weight: 400;
   font-size: 14px;
   line-height: lh(14, 14);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(20, 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 0;
+  }
 }
 
 .nutrition__btn-link {
@@ -11,6 +26,12 @@
 
 .nutrition__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .nutrition__item {
@@ -41,27 +62,4 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-font);
-}
-
-@media (min-width: $tablet-width) {
-  .nutrition__text {
-    font-size: 20px;
-    line-height: lh(20, 20);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .nutrition__wrapper {
-    margin-left: 80px;
-  }
-
-  .nutrition__text {
-    margin: 0 0 52px 0;
-  }
-
-  .nutrition__list {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    gap: 80px;
-  }
 }

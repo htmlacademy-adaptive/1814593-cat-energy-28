@@ -1,32 +1,40 @@
 // скоро здесь будут стили, наверно)))
-.page-footer__partnership {
-  padding: 26px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
+.page-footer {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
   }
+}
 
-  .page-footer__partnership {
+.page-footer__partnership {
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
     padding: 56px 40px;
     grid-column: 1 / -1;
   }
+}
 
-  .page-footer__map {
+.page-footer__map {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
+}
 
-  .page-footer__logo {
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
   }
+}
 
-  .page-footer__social {
+.page-footer__social {
+  @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
+}
 
-  .page-footer__copyright {
+.page-footer__copyright {
+  @media (min-width: $tablet-width) {
     grid-column: 3 / -1;
     justify-self: end;
   }

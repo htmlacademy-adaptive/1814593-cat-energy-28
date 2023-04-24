@@ -1,6 +1,11 @@
 .partnership {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    justify-content: flex-start;
+  }
 }
 
 .partnership__title {
@@ -11,6 +16,10 @@
   color: var(--color-address-font);
   width: 139px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 87px 0 80px;
+  }
 }
 
 .partnership__address {
@@ -25,15 +34,4 @@
   line-height: lh(20, 14);
   color: var(--color-text-font);
   margin: 0;
-}
-
-@media (min-width: $desktop-width) {
-  .partnership {
-    width: 565px;
-    justify-content: flex-start;
-  }
-
-  .partnership__title {
-    margin: 0 87px 0 80px;
-  }
 }

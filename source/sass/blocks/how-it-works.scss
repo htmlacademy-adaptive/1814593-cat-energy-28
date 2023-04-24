@@ -5,6 +5,16 @@
 .how-it-works__list {
   @include list-reset;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 70px;
+  }
 }
 
 .how-it-works__item {
@@ -12,6 +22,11 @@
   display: grid;
   grid-template-columns: 60px 200px;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    display: block;
+  }
 }
 
 .how-it-works__item:not(:last-child) {
@@ -23,6 +38,13 @@
   width: 60px;
   height: 60px;
   background-color: var(--color-btn-bg);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 31px;
+  }
 }
 
 .how-it-works__text {
@@ -32,30 +54,4 @@
   line-height: lh(18, 14);
   color: var(--color-text-font);
   margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .how-it-works__list {
-    grid-template-columns: 250px 250px;
-    gap: 37px;
-  }
-
-  .how-it-works__item {
-    width: 250px;
-    display: block;
-  }
-
-  .how-it-works__item::before {
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin-bottom: 31px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .how-it-works__list {
-    grid-template-columns: 250px 250px 250px 250px;
-    gap: 70px;
-  }
 }

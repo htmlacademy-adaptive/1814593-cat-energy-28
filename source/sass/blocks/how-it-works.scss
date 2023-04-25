@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 70px;
   }
 }
@@ -20,7 +20,7 @@
 .how-it-works__item {
   width: 280px;
   display: grid;
-  grid-template-columns: 60px 200px;
+  grid-template-columns: min-content 1fr;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -37,6 +37,7 @@
   content: "";
   width: 60px;
   height: 60px;
+  display: block;
   background-color: var(--color-btn-bg);
 
   @media (min-width: $tablet-width) {

@@ -80,19 +80,25 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--contacts">
           <legend class="form__title">Контактные данные (владельца кота)</legend>
-          <label class="form__label" for="email">E-mail:*
-            <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="form__label" for="phone">Телефон:*
-            <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
+          <ul class="form__list form__list--contacts">
+            <li class="form__item">
+              <label class="form__label" for="email">E-mail:*
+                <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="phone">Телефон:*
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--comment">
           <legend class="form__title">Комментарий</legend>
           <label class="form__label visually-hidden" for="comment">Позволит нам более качественно подобрать программу питания для Вашего питомца</label>
-          <textarea class="form__text-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__text-comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__group form__group--additional">
           <legend class="form__title">Дополнительно</legend>
@@ -127,8 +133,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__btn-link btn-link" type="submit">Отправить заявку</button>
-        <p class="form__text">* — Обязательные поля</p>
+        <div class="form__btn-wrapper">
+          <button class="form__btn-link btn-link" type="submit">Отправить заявку</button>
+          <p class="form__text">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>

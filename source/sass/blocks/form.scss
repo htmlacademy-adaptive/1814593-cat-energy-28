@@ -1,3 +1,17 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}
+
 .form__group {
   border: none;
   padding: 0;
@@ -6,10 +20,38 @@
 
 .form__group--pet-info {
   margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.form__group--program-type {
+  margin-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
+}
+
+.form__group--contacts {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__group--comment {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .form__group--additional {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .form__label {
@@ -30,7 +72,6 @@
 .form__label--options {
   padding: 0 0 0 46px;
 }
-
 
 .form__signature {
   font-weight: 400;
@@ -56,12 +97,22 @@
   color: var(--color-text-font);
 }
 
-.form__group--program-type {
-  margin-bottom: 19px;
-}
-
 .form__list {
   @include list-reset;
+}
+
+.form__list--contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .form__list--additional {
@@ -129,7 +180,16 @@
 }
 
 .form__text-comment {
+  width: 100%;
   border: 1px solid var(--color-input-border);
+  overflow: hidden;
+  min-height: 150px;
+  resize: vertical;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+  }
 }
 
 .form__text-comment::placeholder {
@@ -147,4 +207,27 @@
   font-size: 14px;
   line-height: lh(16, 14);
   margin: 0;
+}
+
+.form__btn-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
+.form__btn-link {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-self: start;
+  }
 }

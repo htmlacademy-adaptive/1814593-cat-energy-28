@@ -3,19 +3,40 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px 40px 40px;
+    padding: 0 37px 40px 39px;
     grid-template-columns: 1fr;
     background-color: var(--color-bg-blocks);
   }
 }
 
+.card--else {
+  @media (min-width: $tablet-width) {
+    background-color: var(--color-input-bg);
+    border: 2px solid var(--color-bg-blocks);
+  }
+}
+
 .card--extra-product {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px 40px 40px;
-    grid-template-columns: 1fr;
-    background-color: var(--color-bg-blocks);
+    padding: 26px 38px 28px 38px;
+    grid-template-columns: 1fr max-content max-content;
+    gap: 25px 50px;
+    background-color: var(--color-input-bg);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 27px 0;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    align-items: center;
+  }
+}
+
+.card--extra-product:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid var(--color-input-border-special);
   }
 }
 
@@ -35,7 +56,6 @@
   line-height: lh(20, 16);
   text-transform: uppercase;
   margin: 0;
-  width: 76px;
   grid-column: 2 / -1;
 
   @media (min-width: $tablet-width) {
@@ -45,6 +65,15 @@
 
 .card__title--extra {
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    grid-column: 1 / 2;
+  }
 }
 
 .card__list-description {
@@ -74,6 +103,28 @@
   margin: 0;
 }
 
+.card__value--extra {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.card__value--cost {
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
+}
+
 .card__sub-text {
   font-family: var(--additional-font);
   font-weight: 400;
@@ -83,15 +134,17 @@
 }
 
 .card__btn-link {
-  width: 280px;
   grid-column: 1 / -1;
   align-self: center;
+}
 
+.card__btn-link--extra {
   @media (min-width: $tablet-width) {
-    width: 248px;
+    grid-column: 1 / -1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 168px;
+    grid-column: 4 / -1;
+    width: 244px;
   }
 }

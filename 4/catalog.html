@@ -35,7 +35,7 @@
       <span class="visually-hidden">Открывает и закрывает меню</span>
     </button>
   </header>
-  <main class="main-catalog main-container">
+  <main class="main-catalog">
     <h1 class="main-catalog__title container">Каталог продукции</h1>
     <section class="main-catalog__product-cards product-cards container">
       <h2 class="visually-hidden">Основные товары</h2>
@@ -176,49 +176,33 @@
         <li class="product-cards__item card">
           <h3 class="card__title">Показать еще 100500 товаров</h3>
           <p class="card__text">На самом деле вкусов гораздо больше!</p>
-          <a class="card__btn-link btn-link">Показать все</a>
+          <a class="card__btn-link btn-link btn-link--bg">Показать все</a>
         </li>
       </ul>
       <h2 class="product-cards__title">Дополнительные товары</h2>
-      <ul class="product-cards__list">
-        <li class="product-cards__item card">
-          <h3 class="card__title">Сахарозаменитель</h3>
-          <dl class="card__list-description">
-            <div class="card__parameter-value">
-              <dt class="card__parameter">1 упаковка (100 г)</dt>
-              <dd class="card__value">200 ₽</dd>
-            </div>
-          </dl>
+      <ul class="product-cards__list product-cards__list--extra-products">
+        <li class="product-cards__item card card--extra-product">
+          <h3 class="card__title card__title--extra">Сахарозаменитель</h3>
+          <p class="card__value card__value--extra">1 упаковка (100 г)</p>
+          <p class="card__value card__value--cost">200 ₽</p>
           <a class="card__btn-link btn-link">Заказать</a>
         </li>
-        <li class="product-cards__item card">
+        <li class="product-cards__item card card--extra-product">
           <h3 class="card__title">Питьевая вода</h3>
-          <dl class="card__list-description">
-            <div class="card__parameter-value">
-              <dt class="card__parameter">5 литров</dt>
-              <dd class="card__value">50 ₽</dd>
-            </div>
-          </dl>
+          <p class="card__value">5 литров</p>
+          <p class="card__value">50 ₽</p>
           <a class="card__btn-link btn-link">Заказать</a>
         </li>
-        <li class="product-cards__item card">
+        <li class="product-cards__item card card--extra-product">
           <h3 class="card__title">Молоко</h3>
-          <dl class="card__list-description">
-            <div class="card__parameter-value">
-              <dt class="card__parameter">1 литр</dt>
-              <dd class="card__value">100 ₽</dd>
-            </div>
-          </dl>
+          <p class="card__value">1 литр</p>
+          <p class="card__value">100 ₽</p>
           <a class="card__btn-link btn-link">Заказать</a>
         </li>
-        <li class="product-cards__item card">
+        <li class="product-cards__item card card--extra-product">
           <h3 class="card__title">Витамины</h3>
-          <dl class="card__list-description">
-            <div class="card__parameter-value">
-              <dt class="card__parameter">1 упаковка (30 г)</dt>
-              <dd class="card__value">300 ₽</dd>
-            </div>
-          </dl>
+          <p class="card__value">1 упаковка (30 г)</p>
+          <p class="card__value">300 ₽</p>
           <a class="card__btn-link btn-link">Заказать</a>
         </li>
       </ul>

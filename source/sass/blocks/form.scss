@@ -30,7 +30,7 @@
   margin-bottom: 19px;
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / -1;
+    grid-column: -2 / -1;
   }
 }
 
@@ -99,15 +99,17 @@
 
 .form__list {
   @include list-reset;
-}
-
-.form__list--contacts {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 23px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
   }
+}
+
+.form__list--contacts {
+  gap: 20px;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -118,17 +120,19 @@
 .form__list--additional {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }
 
-.form__item:not(:last-child) {
-  margin-bottom: 25px;
+.form__item--program,
+.form__item--additional {
+  justify-self: start;
 }
 
 .form__control-mark {

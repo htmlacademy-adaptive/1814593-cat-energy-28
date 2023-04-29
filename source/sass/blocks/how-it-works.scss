@@ -5,6 +5,7 @@
 .how-it-works__list {
   @include list-reset;
   display: grid;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -27,10 +28,6 @@
     width: 250px;
     display: block;
   }
-}
-
-.how-it-works__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .how-it-works__item::before {

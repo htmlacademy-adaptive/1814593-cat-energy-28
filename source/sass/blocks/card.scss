@@ -17,8 +17,6 @@
 }
 
 .card--extra-product {
-  grid-template-columns: 1fr 1fr;
-
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px 38px;
     grid-template-columns: 1fr max-content max-content;
@@ -28,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 25px 0 27px 0;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 285px repeat(2, 1fr) 244px;
     column-gap: 40px;
     align-items: center;
   }
@@ -60,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    justify-self: center;
   }
 }
 
@@ -68,10 +67,10 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    justify-self: start;
   }
 
   @media (min-width: $desktop-width) {
-    width: 285px;
     grid-column: 1 / 2;
   }
 }
@@ -82,7 +81,6 @@
   font-size: 12px;
   line-height: lh(16, 12);
   color: var(--color-text-font);
-  grid-column: 2 / -1;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
@@ -103,26 +101,8 @@
   margin: 0;
 }
 
-.card__value--extra {
-  @media (min-width: $tablet-width) {
-    grid-column: 2 / 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
-  }
-}
-
 .card__value--cost {
   justify-self: end;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3 / -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 3 / 4;
-  }
 }
 
 .card__sub-text {
@@ -144,7 +124,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 4 / -1;
-    width: 244px;
+    grid-column: -2 / -1;
   }
 }

@@ -41,37 +41,45 @@
       <form class="program__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group form__group--pet-info">
           <legend class="form__title visually-hidden">Информация о вашем коте</legend>
-          <label class="form__label" for="name">
-            <span class="form__signature">Имя:*</span>
-            <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
-          </label>
-          <label class="form__label" for="weight">
-            <span class="form__signature">Вес (кг):*</span>
-            <input class="form__input" type="text" id="weight" name="weight" placeholder="7">
-          </label>
-          <label class="form__label" for="age">
-            <span class="form__signature">Возраст (лет):</span>
-            <input class="form__input" type="text" id="age" name="age" placeholder="7">
-          </label>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="name">
+                <span class="form__signature">Имя:*</span>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="weight">
+                <span class="form__signature">Вес (кг):*</span>
+                <input class="form__input" type="text" id="weight" name="weight" placeholder="7">
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="age">
+                <span class="form__signature">Возраст (лет):</span>
+                <input class="form__input" type="text" id="age" name="age" placeholder="7">
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form__group form__group--program-type">
           <legend class="form__title visually-hidden">Выбор программы</legend>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__item form__item--program">
               <label class="form__label form__label--programs" for="slim">
                 <input class="form__input visually-hidden" type="radio" id="slim" name="program" value="slim" checked>
                 <span class="form__control-mark"></span>
                 <span class="form__control-label">Похудение</span>
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--program">
               <label class="form__label form__label--programs" for="weight-gain">
                 <input class="form__input visually-hidden" type="radio" id="weight-gain" name="program" value="weight-gain">
                 <span class="form__control-mark"></span>
                 <span class="form__control-label">Набор массы</span>
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--program">
               <label class="form__label form__label--programs" for="advice">
                 <input class="form__input visually-hidden" type="radio" id="advice" name="program" value="help">
                 <span class="form__control-mark"></span>
@@ -103,28 +111,28 @@
         <fieldset class="form__group form__group--additional">
           <legend class="form__title">Дополнительно</legend>
           <ul class="form__list form__list--additional">
-            <li class="form__item">
+            <li class="form__item form__item--additional">
               <label class="form__label form__label--options" for="sweetener">
                 <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
                 <span class="form__control-mark form__control-mark--checkbox"></span>
                 <span class="form__control-label">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--additional">
               <label class="form__label form__label--options" for="water">
                 <input class="form__input visually-hidden" id="water" type="checkbox" name="water">
                 <span class="form__control-mark form__control-mark--checkbox"></span>
                 <span class="form__control-label">Питьевая вода</span>
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--additional">
               <label class="form__label form__label--options" for="milk">
                 <input class="form__input visually-hidden" id="milk" type="checkbox" name="milk">
                 <span class="form__control-mark form__control-mark--checkbox"></span>
                 <span class="form__control-label">Молоко</span>
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--additional">
               <label class="form__label form__label--options" for="vitamins">
                 <input class="form__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
                 <span class="form__control-mark form__control-mark--checkbox"></span>

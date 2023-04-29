@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -2;
+    grid-column: 1 / 4;
     border: none;
     border-top: 1px solid var(--color-input-border-special);
     border-bottom: 1px solid var(--color-input-border-special);
@@ -45,10 +45,4 @@
   font-size: 24px;
   line-height: lh(24, 24);
   color: var(--color-font);
-}
-
-.product-cards__marketing {
-  @media (min-width: $desktop-width) {
-    grid-column: -2 / -1;
-  }
 }

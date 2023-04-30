@@ -1,8 +1,7 @@
-.nutrition__title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: lh(36, 36);
+.nutrition__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .nutrition__text {
@@ -10,6 +9,15 @@
   font-size: 14px;
   line-height: lh(14, 14);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(20, 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 0;
+  }
 }
 
 .nutrition__btn-link {
@@ -18,6 +26,12 @@
 
 .nutrition__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .nutrition__item {

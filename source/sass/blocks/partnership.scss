@@ -1,9 +1,29 @@
+.partnership {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    justify-content: flex-start;
+  }
+}
+
 .partnership__title {
   font-weight: 400;
   font-size: 16px;
   line-height: lh(20, 16);
   text-transform: uppercase;
   color: var(--color-address-font);
+  width: 139px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 87px 0 80px;
+  }
+}
+
+.partnership__address {
+  width: 139px;
 }
 
 .partnership__text {
@@ -13,4 +33,5 @@
   font-style: normal;
   line-height: lh(20, 14);
   color: var(--color-text-font);
+  margin: 0;
 }

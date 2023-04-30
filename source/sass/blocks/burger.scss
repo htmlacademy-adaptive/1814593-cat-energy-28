@@ -1,3 +1,5 @@
 .burger {
-  background-color: var(--color-error);
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

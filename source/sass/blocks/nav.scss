@@ -4,10 +4,28 @@
   font-size: 20px;
   line-height: lh(20, 20);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: lh(24, 18);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+    color: var(--color-btn-font);
+    background-color: var(--color-accent-bg);
+    margin-left: auto;
+  }
 }
 
 .nav__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .nav__link {

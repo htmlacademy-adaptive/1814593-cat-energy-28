@@ -130,7 +130,10 @@
   }
 }
 
-.form__item--program,
+.form__item--program {
+  justify-self: start;
+}
+
 .form__item--additional {
   justify-self: start;
 }

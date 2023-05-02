@@ -1,4 +1,6 @@
 .page-header {
+  min-height: 65px;
+  position: relative;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {

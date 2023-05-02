@@ -20,12 +20,21 @@
   }
 }
 
+.nav--closed .nav__list {
+  display: none;
+}
+
 .nav__list {
   @include list-reset;
 
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.nav__item {
+  padding: 22px 0 24px 0;
+  text-align: center;
 }
 
 .nav__link {

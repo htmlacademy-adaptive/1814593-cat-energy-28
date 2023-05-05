@@ -20,8 +20,19 @@
   }
 }
 
-.nav--closed .nav__list {
+.nav--closed {
   display: none;
+}
+
+.nav--opened {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: var(--color-input-bg);
+}
+
+.nav--opened ~ .burger {
+  background: url("../img/burger-cross.svg") no-repeat center center var(--color-btn-font);
 }
 
 .nav__list {
@@ -35,6 +46,11 @@
 .nav__item {
   padding: 22px 0 24px 0;
   text-align: center;
+  border-bottom: 1px solid var(--color-border-nav);
+}
+
+.nav__item:first-child {
+  border-top: 1px solid var(--color-border-nav);
 }
 
 .nav__link {

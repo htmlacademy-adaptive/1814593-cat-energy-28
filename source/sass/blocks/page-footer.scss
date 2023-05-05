@@ -1,7 +1,9 @@
 // скоро здесь будут стили, наверно)))
 .page-footer {
+  display: grid;
+  gap: 20px;
+
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr max-content 1fr;
   }
 }
@@ -16,18 +18,25 @@
 }
 
 .page-footer__map {
+  justify-self: center;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
 }
 
 .page-footer__logo {
+  justify-self: center;
+
   @media (min-width: $tablet-width) {
+    justify-self: start;
     grid-column: 1 / 2;
   }
 }
 
 .page-footer__social {
+  justify-self: center;
+
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }

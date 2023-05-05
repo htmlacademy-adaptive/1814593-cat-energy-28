@@ -1,9 +1,16 @@
 .page-header {
-  min-height: 65px;
   position: relative;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: max-content 1fr min-content;
 
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
+
+.page-header__burger {
+  grid-column: -2 / -1;
+  align-self: center;
+}
+

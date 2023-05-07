@@ -1,1 +1,20 @@
-// скоро здесь будут стили, наверно)))
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 280px;
+  padding: 0 0 40px 0;
+}
+
+.slider__picture {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__picture--before {
+  grid-column: 1 / 2;
+}
+
+.slider__picture--after {
+  grid-column: 2 / 3;
+  justify-content: flex-end;
+}

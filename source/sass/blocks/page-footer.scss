@@ -18,6 +18,7 @@
 }
 
 .page-footer__map {
+  grid-column: 1 / -1;
   justify-self: center;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +44,8 @@
 }
 
 .page-footer__copyright {
+  margin: 10px 10px 40px 10px;
+
   @media (min-width: $tablet-width) {
     grid-column: -2 / -1;
     justify-self: end;

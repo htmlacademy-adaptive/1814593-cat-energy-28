@@ -29,14 +29,26 @@
 }
 
 .nav--opened {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  background-color: var(--color-input-bg);
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-input-bg);
+  }
 }
 
 .nav--opened ~ .burger {
   background: url("../img/burger-cross.svg") no-repeat center center var(--color-btn-font);
+}
+
+.nav--nojs {
+  display: block;
+  grid-column: 1 / -1;
+}
+
+.nav--nojs ~ .burger {
+  display: none;
 }
 
 .nav__list {
@@ -50,15 +62,34 @@
 .nav__item {
   padding: 22px 0 24px 0;
   text-align: center;
-  border-bottom: 1px solid var(--color-border-nav);
 }
 
-.nav__item:first-child {
-  border-top: 1px solid var(--color-border-nav);
+.nav__item::before {
+  @media (max-width: $tablet-width) {
+    content: "";
+    height: 1px;
+    background-color: var(--color-border-nav);
+    position: absolute;
+    left: -20px;
+    width: calc(100% + 40px);
+    margin-top: 44px;
+  }
+}
+
+.nav__item:first-child::after {
+  @media (max-width: $tablet-width) {
+    content: "";
+    height: 1px;
+    background-color: var(--color-border-nav);
+    position: absolute;
+    left: -20px;
+    width: calc(100% + 40px);
+    margin-top: -42px;
+  }
 }
 
 .nav__link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: var(--color-font);
 }

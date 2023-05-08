@@ -1,6 +1,9 @@
 .page-header {
   position: relative;
   background-color: #ffffff;
+}
+
+.page-header__wrapper {
   display: grid;
   grid-template-columns: max-content 1fr min-content;
 

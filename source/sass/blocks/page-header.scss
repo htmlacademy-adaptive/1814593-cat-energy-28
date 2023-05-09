@@ -8,7 +8,15 @@
   grid-template-columns: max-content 1fr min-content;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, max-content) 1fr;
+    gap: 12px;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    justify-self: end;
   }
 }
 
@@ -16,4 +24,3 @@
   grid-column: -2 / -1;
   align-self: center;
 }
-

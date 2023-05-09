@@ -5,12 +5,13 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr max-content 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 .page-footer__partnership {
-  padding: 26px 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 40px;
@@ -27,28 +28,12 @@
   }
 }
 
-.page-footer__logo {
-  justify-self: center;
-
-  @media (min-width: $tablet-width) {
-    justify-self: start;
-    grid-column: 1 / 2;
-  }
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .page-footer__social {
   justify-self: center;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 2 / 3;
-  }
-}
-
-.page-footer__copyright {
-  margin: 10px 10px 40px 10px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: -2 / -1;
-    justify-self: end;
-  }
 }

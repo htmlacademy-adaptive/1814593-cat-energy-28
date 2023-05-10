@@ -55,6 +55,7 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
+    margin-top: 18px;
     display: flex;
     column-gap: 35px;
   }
@@ -63,6 +64,10 @@
 .nav__item {
   padding: 22px 0 24px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .nav__item::before {

@@ -1,1 +1,10 @@
 // скоро здесь будут стили, наверно)))
+.map {
+  display: grid;
+}
+
+.map__iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}

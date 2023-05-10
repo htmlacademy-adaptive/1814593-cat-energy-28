@@ -1,11 +1,13 @@
 .nutrition {
-  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 303px, $transparent 303px), url("../img/cat-intro.jpg") no-repeat center top, linear-gradient(to bottom, var(--bright) 303px, $transparent 303px);
+  background: url("../img/green-cat.png") no-repeat center top, linear-gradient(to left, #62a53a 50%, #63a73c 50%) no-repeat center top / 100% 303px;
 
   @media (min-width: $tablet-width) {
     background: transparent;
     position: relative;
   }
 }
+
+// #63A73C
 
 .nutrition__wrapper {
   @media (min-width: $desktop-width) {

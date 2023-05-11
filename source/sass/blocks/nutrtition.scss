@@ -7,9 +7,10 @@
   }
 }
 
-// #63A73C
-
 .nutrition__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
   @media (min-width: $desktop-width) {
     margin-left: 80px;
   }
@@ -52,8 +53,22 @@
 
 .nutrition__image {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 5;
+    justify-self: center;
+  }
 }
 
 .nutrition__btn-link {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin: 20px 0 0 88px;
+
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
 }

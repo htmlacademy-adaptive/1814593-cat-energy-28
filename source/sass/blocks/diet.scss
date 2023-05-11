@@ -44,25 +44,36 @@
 .diet__item::before {
   content: "";
   width: 68px;
-  height: 50px;
+  height: 56px;
   grid-column: 1 / 2;
   display: inline-block;
-  background: var(--bgi) center center no-repeat, radial-gradient(circle, var(--bright) 24px, $transparent 25px);
+  background: var(--bgi) var(--bgpg, center) var(--bgpv, center) no-repeat, radial-gradient(circle, var(--bright) 24px, $transparent 25px);
 
   @media (min-width: $tablet-width) {
     grid-column: -2 / -1;
     grid-row: 1 / 4;
-    height: 200px;
-    width: 200px;
+    height: 222px;
+    width: 268px;
+    background: var(--bgi) var(--bgpg, center) var(--bgpv, center) / var(--bgs) no-repeat, radial-gradient(circle, var(--bright) 99px, $transparent 100px);
   }
 }
 
 .diet__item--slim {
   --bgi: url("../img/cat-slim.svg");
+  --bgpv: top;
+
+  @media (min-width: $tablet-width) {
+    --bgs: 141px 194px;
+  }
 }
 
 .diet__item--pro {
   --bgi: url("../img/cat-pro.svg");
+  --bgpg: left;
+
+  @media (min-width: $tablet-width) {
+    --bgs: 268px 112px;
+  }
 }
 
 .diet__text {
@@ -72,7 +83,7 @@
   line-height: lh(18, 14);
   color: var(--color-text-font);
   margin: 0 0 15px 0;
-  padding: 22px 0 23px 0;
+  padding: 19px 0 23px 0;
   border-bottom: 1px solid var(--grayish);
   grid-column: 1 / -1;
 
@@ -92,10 +103,20 @@
   text-transform: uppercase;
   color: var(--color-font);
   grid-column: 1 / -1;
+  display: flex;
+  column-gap: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: lh(30, 20);
     grid-column: 1 / 2;
   }
+}
+
+.diet__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  background: url("../img/icon-arrow.svg");
+  align-self: center;
 }

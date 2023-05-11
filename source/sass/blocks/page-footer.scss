@@ -21,7 +21,6 @@
 
 .page-footer__map {
   grid-column: 1 / -1;
-  justify-self: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;

@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 37px 137px;
+    counter-reset: points;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,8 +26,8 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
   }
 }
 
@@ -35,7 +36,6 @@
   width: 60px;
   height: 60px;
   display: inline-block;
-  // background-color: var(--color-btn-bg);
   background: var(--color-btn-bg) var(--bgi) no-repeat center center;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +43,21 @@
     height: 80px;
     display: block;
     margin-bottom: 31px;
+  }
+}
+
+.how-it-works__item::after {
+  @media (min-width: $tablet-width) {
+    content: "" counter(points);
+    counter-increment: points;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 280px;
+    line-height: lh(280, 280);
+    color: var(--gray-basic);
+    grid-column: -2 / -1;
+    grid-row: 1 / 4;
+    justify-self: end;
   }
 }
 
@@ -69,4 +84,10 @@
   line-height: lh(18, 14);
   color: var(--color-text-font);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    z-index: 2;
+  }
 }

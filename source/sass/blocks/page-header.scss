@@ -8,9 +8,12 @@
   grid-template-columns: max-content 1fr min-content;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: repeat(2, max-content) 1fr;
     gap: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
   }
 }
 

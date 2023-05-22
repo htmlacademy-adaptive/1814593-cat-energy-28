@@ -1,3 +1,5 @@
+// Меню бургер
+
 let nav = document.querySelector('.nav');
 let navToggle = document.querySelector('.burger');
 
@@ -12,3 +14,14 @@ navToggle.addEventListener('click', function () {
     nav.classList.remove('nav--opened');
   }
 });
+
+// Слайдер с котами
+
+function initSlider() {
+  const container = document.querySelector('.slider');
+  document.querySelector('.slider__range')?.addEventListener('input', (e) => {
+    container.style.setProperty('--persent', `${e.target.value}%`);
+  });
+}
+
+initSlider();

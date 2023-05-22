@@ -184,6 +184,19 @@
   line-height: lh(26, 24);
   color: var(--color-font);
   margin-bottom: 40px;
+  position: relative;
+  background-color: #008000;
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #ff0000;
+  box-shadow: 100vw 1px left #1eff00;
 }
 
 .form__text-comment {

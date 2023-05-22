@@ -21,15 +21,11 @@
     content: "";
     position: absolute;
     width: 50%;
-    height: 694px;
+    height: 1694px;
     right: 0;
     bottom: 0;
-    background: #61a439 url("../img/green-cat-desktop.png") no-repeat left / 1044px 696px;
+    background: #61a439 url("../img/green-cat-desktop.png") no-repeat left bottom / 1044px 696px;
     z-index: -1;
-
-    --out-width: 2px;
-    outline: var(--out-width) solid #ff0000;
-    outline-offset: calc(0px - var(--out-width));
   }
 }
 

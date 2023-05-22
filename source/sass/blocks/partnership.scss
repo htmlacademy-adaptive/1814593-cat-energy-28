@@ -1,5 +1,8 @@
 .partnership {
   background-color: var(--color-input-bg);
+
+  outline: var(--out-width) solid #00ff00;
+  outline-offset: calc(0px - var(--out-width));
 }
 
 .partnership__wrapper {

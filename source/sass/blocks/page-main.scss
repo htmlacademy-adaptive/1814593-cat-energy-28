@@ -1,5 +1,9 @@
 .page-main__nutrition {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .page-main__diet {

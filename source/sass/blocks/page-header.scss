@@ -1,6 +1,10 @@
 .page-header {
   position: relative;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    background-color: $transparent;
+  }
 }
 
 .page-header__wrapper {

@@ -88,8 +88,7 @@
   color: var(--color-font);
 
   @media (min-width: $desktop-width) {
-    // color: var(--color-btn-font);
-    color: #ff0000;
+    color: var(--color-btn-font);
   }
 }
 
@@ -104,7 +103,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // background-color: var(--color-btn-font);
-    background-color: #ff0000;
+    background-color: var(--color-btn-font);
   }
 }

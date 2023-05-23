@@ -2,16 +2,20 @@
   position: relative;
   background-color: #ffffff;
   z-index: 1;
-  --color-menu: #ff0000;
-  --color-menu-active: #ff00ff;
+  --color-menu: var(--color-font);
+  --color-menu-active: var(--bright);
 
   @media (min-width: $desktop-width) {
     background-color: $transparent;
+    --color-menu: var(--gray-deep);
   }
 }
 
 .page-header--index {
-  --color-menu: #000000;
+  @media (min-width: $desktop-width) {
+    --color-menu: #ffffff;
+    --color-menu-active: #ffffff;
+  }
 }
 
 .page-header__wrapper {

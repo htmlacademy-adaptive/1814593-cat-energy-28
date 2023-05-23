@@ -185,7 +185,7 @@
   color: var(--color-font);
   margin-bottom: 40px;
   position: relative;
-  background-color: #008000;
+  background-color: #ffffff;
 }
 
 .form__title::after {
@@ -194,9 +194,10 @@
   top: 15px;
   right: 0;
   width: 100vw;
-  height: 1px;
-  background-color: #ff0000;
-  box-shadow: 100vw 1px left #1eff00;
+  height: 2px;
+  background-color: var(--bright);
+  box-shadow: 100vw 0 var(--bright);
+  z-index: -1;
 }
 
 .form__text-comment {

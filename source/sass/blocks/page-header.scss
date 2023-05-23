@@ -2,10 +2,16 @@
   position: relative;
   background-color: #ffffff;
   z-index: 1;
+  --color-menu: #ff0000;
+  --color-menu-active: #ff00ff;
 
   @media (min-width: $desktop-width) {
     background-color: $transparent;
   }
+}
+
+.page-header--index {
+  --color-menu: #000000;
 }
 
 .page-header__wrapper {

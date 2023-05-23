@@ -85,7 +85,7 @@
 .nav__link {
   display: block;
   text-decoration: none;
-  color: var(--color-font);
+  color: var(--color-menu);
 
   @media (min-width: $desktop-width) {
     color: var(--color-btn-font);
@@ -97,7 +97,7 @@
     content: "";
     width: 100%;
     height: 2px;
-    background-color: var(--bright);
+    background-color: var(--color-menu-active);
     display: block;
     margin-top: 10px;
   }

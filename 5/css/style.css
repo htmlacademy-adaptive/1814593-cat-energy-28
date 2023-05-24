@@ -37,7 +37,7 @@
   --bright-deep: #5eaa2f;
   --danger: #ff8282;
   --color-font: #000000;
-  --color-btn-font: #ffffff;
+  --color-btn-font: rgb(255, 255, 255);
   --color-text-font: var(--gray-dark);
   --color-address-font: var(--gray-deep);
   --color-btn-bg: var(--bright);
@@ -145,6 +145,13 @@ body {
   padding: 10px 12px;
   display: block;
   box-sizing: border-box;
+}
+.btn-link:hover {
+  background-color: var(--bright-deep);
+}
+.btn-link:active {
+  background-color: var(--bright-deep);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-link--bg {
@@ -254,10 +261,22 @@ body {
     margin: 0;
   }
 }
+.logo--image:hover {
+  opacity: 0.8;
+}
+.logo--image:active {
+  opacity: 0.6;
+}
 
 .logo__text {
   display: block;
   margin: 0;
+}
+.logo__text:hover {
+  opacity: 0.8;
+}
+.logo__text:active {
+  opacity: 0.6;
 }
 
 .nav {
@@ -363,6 +382,12 @@ body {
     color: var(--color-menu);
   }
 }
+.nav__link:hover {
+  opacity: 0.6;
+}
+.nav__link:active {
+  opacity: 0.3;
+}
 
 @media (min-width: 768px) {
   .nav__link--active::after {
@@ -386,6 +411,7 @@ body {
 @media (min-width: 1200px) {
   .page-main__nutrition {
     margin-bottom: 82px;
+    padding-top: 4px;
   }
 }
 
@@ -454,6 +480,11 @@ body {
     z-index: -1;
   }
 }
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .nutrition__wrapper::after {
+    background: #61a439 url("../img/green-cat-desktop@2x.png") no-repeat left bottom/1044px 696px;
+  }
+}
 
 .nutrition__title {
   text-align: center;
@@ -502,20 +533,39 @@ body {
   }
 }
 
-.nutrition__image {
+.nutrition__figure {
   margin-bottom: 3px;
 }
 @media (min-width: 768px) {
-  .nutrition__image {
+  .nutrition__figure {
     grid-column: 1/-1;
     grid-row: 3/5;
     justify-self: center;
   }
 }
 @media (min-width: 1200px) {
-  .nutrition__image {
+  .nutrition__figure {
     position: absolute;
+    left: calc(50% - 162px);
+    top: 32px;
     margin: 0;
+  }
+}
+
+.nutrition__image {
+  width: 280px;
+  height: 270px;
+}
+@media (min-width: 768px) {
+  .nutrition__image {
+    width: 709px;
+    height: 609px;
+  }
+}
+@media (min-width: 1200px) {
+  .nutrition__image {
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -813,12 +863,12 @@ body {
 }
 @media (min-width: 768px) {
   .example {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 462px, var(--color-bg-special) 462px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 619px, var(--color-bg-special) 619px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .example {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 136px, var(--color-bg-special) 136px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 136px, var(--color-bg-blocks) 136px);
   }
 }
 
@@ -945,7 +995,7 @@ body {
 }
 @media (min-width: 1200px) {
   .example__definition {
-    background-color: var(--color-bg-special);
+    background-color: var(--color-bg-blocks);
     padding: 0;
   }
 }
@@ -1008,6 +1058,12 @@ body {
   width: 280px;
   padding: 0 0 40px 0;
 }
+@media (min-width: 768px) {
+  .slider {
+    width: 560px;
+    padding: 0 0 101px 0;
+  }
+}
 
 .slider__picture {
   grid-row: 1/2;
@@ -1060,7 +1116,12 @@ body {
 }
 
 .partnership {
-  background-color: var(--color-input-bg);
+  background-color: var(--color-bg-blocks);
+}
+@media (min-width: 1200px) {
+  .partnership {
+    background-color: var(--color-input-bg);
+  }
 }
 
 .partnership__wrapper {
@@ -1472,6 +1533,7 @@ body {
   font-size: 36px;
   line-height: 1;
   color: var(--color-font);
+  padding-top: 78px;
   margin-bottom: 41px;
 }
 
@@ -1492,6 +1554,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 25px;
 }
 @media (min-width: 768px) {
   .product-cards__list {
@@ -1507,10 +1570,12 @@ body {
   }
 }
 
+.product-cards__list--extra-products {
+  margin-bottom: 35px;
+}
 @media (min-width: 768px) {
   .product-cards__list--extra-products {
     grid-template-columns: 1fr;
-    border: 1px solid var(--color-input-border-special);
     gap: 0;
   }
 }
@@ -1530,6 +1595,10 @@ body {
   color: var(--color-font);
 }
 
+.product-cards__marketing {
+  margin-bottom: 35px;
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1538,28 +1607,39 @@ body {
   .card {
     padding: 0 37px 40px 39px;
     grid-template-columns: 1fr;
-    background-color: var(--color-bg-blocks);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 73px, var(--color-bg-blocks) 73px);
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 81px, var(--color-bg-blocks) 81px);
   }
 }
 
 @media (min-width: 768px) {
   .card--else {
-    background-color: var(--color-input-bg);
+    background: var(--color-input-bg);
     border: 2px solid var(--color-bg-blocks);
   }
 }
 
+.card--extra-product {
+  border-top: 1px solid var(--gray);
+  padding-top: 13px;
+  gap: 13px;
+}
 @media (min-width: 768px) {
   .card--extra-product {
     padding: 26px 38px 28px 38px;
     grid-template-columns: 1fr max-content max-content;
     gap: 25px 50px;
-    background-color: var(--color-input-bg);
+    background: var(--color-input-bg);
+    border: none;
   }
 }
 @media (min-width: 1200px) {
   .card--extra-product {
-    padding: 25px 0 27px 0;
+    padding: 15px 0 17px 0;
     grid-template-columns: 285px repeat(2, 1fr) 244px;
     column-gap: 40px;
     align-items: center;
@@ -1572,15 +1652,16 @@ body {
   }
 }
 
-.card__image {
+.card__figure {
   grid-column: 1/2;
   grid-row: 1/3;
   align-self: center;
   justify-self: center;
 }
 @media (min-width: 768px) {
-  .card__image {
+  .card__figure {
     grid-column: 1/-1;
+    grid-row: 1/2;
   }
 }
 
@@ -1598,12 +1679,28 @@ body {
     grid-column: 1/-1;
     text-align: center;
     justify-self: center;
-    width: 174px;
   }
+}
+
+.card__title--else {
+  width: 100%;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card__title--else::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url("../img/plus.svg") center no-repeat;
+  margin: 25px auto;
 }
 
 .card__title--extra {
   grid-column: 1/-1;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .card__title--extra {
@@ -1615,6 +1712,12 @@ body {
   .card__title--extra {
     grid-column: 1/2;
   }
+}
+
+.card__text {
+  grid-column: 1/-1;
+  text-align: center;
+  margin: 0 0 21px 0;
 }
 
 .card__list-description {
@@ -1673,13 +1776,69 @@ body {
   }
 }
 
+.marketing {
+  background: url("../img/green-cat-gift.png") center/280px 290px no-repeat;
+  padding: 59px 61px 43px 58px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+@media (min-width: 768px) {
+  .marketing {
+    background: url("../img/green-cat-gift-tablet.png") center/707px 200px no-repeat;
+    grid-template-columns: 1fr 1fr;
+    gap: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .marketing {
+    background: url("../img/green-cat-gift-desktop.png") center/245px 289px no-repeat;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 42px 61px 42px 58px;
+  }
+}
+
+.marketing::before {
+  content: "";
+  width: 78px;
+  height: 80px;
+  background: url("../img/icon-gift.svg") no-repeat center;
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  .marketing::before {
+    justify-self: start;
+    margin: 0 0 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .marketing::before {
+    justify-self: center;
+    margin: 0;
+  }
+}
+
 .marketing__text {
   font-family: var(--additional-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: var(--color-btn-font);
-  background-color: var(--color-btn-bg);
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .marketing__text {
+    width: 161px;
+    text-align: start;
+  }
+}
+@media (min-width: 1200px) {
+  .marketing__text {
+    width: 161px;
+    text-align: center;
+  }
 }
 
 .page-footer {
@@ -1785,10 +1944,15 @@ body {
   grid-template-columns: 1fr;
 }
 
-.map__image {
+.map__figure {
   justify-self: center;
   grid-column: 1/-1;
   grid-row: 1/2;
+}
+
+.map__image {
+  width: 320px;
+  height: 362px;
 }
 
 .map__iframe {

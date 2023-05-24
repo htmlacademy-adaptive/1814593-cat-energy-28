@@ -19,7 +19,8 @@
 }
 
 .form__group--pet-info {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -27,7 +28,15 @@
 }
 
 .form__group--program-type {
-  margin-bottom: 19px;
+  padding-bottom: 24px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid var(--color-input-border);
+    padding: 30px 28px;
+    margin-bottom: 75px;
+  }
+
 
   @media (min-width: $desktop-width) {
     grid-column: -2 / -1;
@@ -35,12 +44,16 @@
 }
 
 .form__group--contacts {
+  margin-bottom: 24px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
 }
 
 .form__group--comment {
+  margin-bottom: 23px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
@@ -63,6 +76,7 @@
   grid-template-columns: max-content 1fr;
   gap: 13px;
   position: relative;
+  align-items: center;
 }
 
 .form__label--programs {
@@ -121,6 +135,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -168,10 +183,9 @@
 
 .form__input[type="checkbox"]:checked + .form__control-mark::before {
   content: "";
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: var(--color-btn-bg);
+  width: 18px;
+  height: 14px;
+  background: url("../img/green-check.svg") no-repeat center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -186,6 +200,10 @@
   margin-bottom: 40px;
   position: relative;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form__title::after {
@@ -220,19 +238,14 @@
   line-height: lh(18, 16);
   text-transform: uppercase;
   color: var(--color-text-font);
-}
-
-.form__text {
-  font-family: var(--additional-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: lh(16, 14);
-  margin: 0;
+  padding-left: 15px;
+  padding-top: 9px;
 }
 
 .form__btn-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 21px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -249,6 +262,20 @@
 .form__btn-link {
   @media (min-width: $tablet-width) {
     width: 100%;
+    justify-self: start;
+  }
+}
+
+.form__text {
+  font-family: var(--additional-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: lh(16, 14);
+  margin: 0;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
     justify-self: start;
   }
 }

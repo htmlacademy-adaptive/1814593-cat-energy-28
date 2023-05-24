@@ -1,5 +1,9 @@
 .nutrition {
-  background: url("../img/green-cat.png") no-repeat center top, linear-gradient(to left, #62a53a 50%, #63a73c 50%) no-repeat center top / 100% 303px;
+  background: url("../img/green-cat-mobile.png") no-repeat center top, linear-gradient(to left, #62a53a 50%, #63a73c 50%) no-repeat center top / 100% 303px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/green-cat-mobile@2x.png") no-repeat center top / 320px auto, linear-gradient(to left, #62a53a 50%, #63a73c 50%) no-repeat center top / 100% 303px;
+  }
 
   @media (min-width: $tablet-width) {
     background: transparent;
@@ -98,6 +102,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0  80px;
+    margin: 0 0 185px 80px;
   }
 }

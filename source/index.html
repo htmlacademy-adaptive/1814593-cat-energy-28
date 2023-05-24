@@ -41,7 +41,11 @@
       <div class="nutrition__wrapper container">
         <h2 class="nutrition__title title">Функциональное питание&nbsp;для&nbsp;котов</h2>
         <p class="nutrition__text">Занялся собой? Займись котом!</p>
-        <img class="nutrition__image" src="img/cat-energy-pro-index.png" alt="Питание Cat Energy Pro">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/cat-energy-pro-index-desktop.png 1x, img/cat-energy-pro-index-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/cat-energy-pro-index-tablet.png 1x, img/cat-energy-pro-index-tablet@2x.png 2x">
+          <img class="nutrition__image" src="img/cat-energy-pro-index.png" width="280" height="270" srcset="img/cat-energy-pro-index@2x.png 2x" alt="Питание Cat Energy Pro">
+        </picture>
         <a class="nutrition__btn-link btn-link" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -104,10 +108,10 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__picture slider__picture--before">
-            <img class="slider__image" src="img/cat-before.png" alt="Кот Борис до изменения корма">
+            <img class="slider__image" src="img/cat-before.png" width="280" height="256" srcset="img/cat-before@2x.png 2x" alt="Кот Борис до изменения корма">
           </div>
           <div class="slider__picture slider__picture--after">
-            <img class="slider__image" src="img/cat-after.png" alt="Кот Борис после перехода на корм Cat Energy Slim">
+            <img class="slider__image" src="img/cat-after.png" width="280" height="256" srcset="img/cat-after@2x.png 2x" alt="Кот Борис после перехода на корм Cat Energy Slim">
           </div>
           <input class="slider__range" type="range" min="0" max="100" value="50" aria-label="Процент от фотографии">
           <div class="slider__button-line" aria-hidden="true"></div>
@@ -120,17 +124,14 @@
       <div class="partnership__wrapper container">
         <h2 class="partnership__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="partnership__address">
-          <p class="partnership__text">ул. Большая Конюшенная, д. 19/8 <span
-              class="partnership__city">Санкт-Петербург</span></p>
+          <p class="partnership__text">ул. Большая Конюшенная, д. 19/8 <span class="partnership__city">Санкт-Петербург</span></p>
         </address>
       </div>
     </section>
     <section class="page-footer__map map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <img class="map__image" src="img/location.jpg" alt="Карта" width="320" height="362">
-      <iframe class="map__iframe"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1683739871990!5m2!1sru!2sru"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <img class="map__image" src="img/location.jpg" width="320" height="362" srcset="img/location@2x.jpg 2x" alt="Карта">
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1683739871990!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo" href="index.html">

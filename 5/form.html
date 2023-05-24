@@ -22,13 +22,13 @@
       <nav class="page-header__nav nav nav--closed nav--nojs">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link nav__link--active" href="index.html">Главная</a>
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор программы</a>
+            <a class="nav__link nav__link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
       <p class="program__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
       <form class="program__form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group form__group--pet-info">
-          <legend class="form__title visually-hidden">Информация о вашем коте</legend>
+          <legend class="visually-hidden">Информация о вашем коте</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="name">
@@ -66,7 +66,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__group form__group--program-type">
-          <legend class="form__title visually-hidden">Выбор программы</legend>
+          <legend class="visually-hidden">Выбор программы</legend>
           <ul class="form__list">
             <li class="form__item form__item--program">
               <label class="form__label form__label--programs" for="slim">
@@ -77,8 +77,7 @@
             </li>
             <li class="form__item form__item--program">
               <label class="form__label form__label--programs" for="weight-gain">
-                <input class="form__input visually-hidden" type="radio" id="weight-gain" name="program"
-                  value="weight-gain">
+                <input class="form__input visually-hidden" type="radio" id="weight-gain" name="program" value="weight-gain">
                 <span class="form__control-mark"></span>
                 <span class="form__control-label">Набор массы</span>
               </label>
@@ -111,8 +110,7 @@
           <legend class="form__title">Комментарий</legend>
           <label class="form__label visually-hidden" for="comment">Позволит нам более качественно подобрать программу
             питания для Вашего питомца</label>
-          <textarea class="form__text-comment" name="comment" id="comment"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__text-comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__group form__group--additional">
           <legend class="form__title">Дополнительно</legend>
@@ -159,17 +157,14 @@
       <div class="partnership__wrapper container">
         <h2 class="partnership__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="partnership__address">
-          <p class="partnership__text">ул. Большая Конюшенная, д. 19/8 <span
-              class="partnership__city">Санкт-Петербург</span></p>
+          <p class="partnership__text">ул. Большая Конюшенная, д. 19/8 <span class="partnership__city">Санкт-Петербург</span></p>
         </address>
       </div>
     </section>
     <section class="page-footer__map map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img class="map__image" src="img/location.jpg" alt="Карта" width="320" height="362">
-      <iframe class="map__iframe"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1683739871990!5m2!1sru!2sru"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1683739871990!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo" href="index.html">

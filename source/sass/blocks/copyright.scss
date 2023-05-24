@@ -1,5 +1,18 @@
 .copyright__link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__link::after {
+  content: "";
+  width: 27px;
+  height: 34px;
+  background: url("../img/logo-copyright.svg") no-repeat center center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 28px;
+  }
 }
 
 .copyright__title {
@@ -9,4 +22,5 @@
   line-height: lh(19, 16);
   color: var(--color-text-font);
   margin: 0;
+  align-self: center;
 }

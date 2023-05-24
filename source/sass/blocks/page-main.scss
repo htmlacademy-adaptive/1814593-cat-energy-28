@@ -1,3 +1,32 @@
+.page-main__nutrition {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+    padding-top: 4px;
+  }
+}
+
+.page-main__diet {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
 .page-main__how-it-works {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }

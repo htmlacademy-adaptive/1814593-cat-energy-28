@@ -1,1 +1,33 @@
-// скоро здесь будут стили, наверно)))
+.logo {
+  justify-self: center;
+  align-self: center;
+}
+
+.logo--image {
+  margin: 10px 0 18px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  display: block;
+  margin: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

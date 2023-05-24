@@ -1,1 +1,61 @@
-// скоро здесь будут стили, наверно)))
+.slider {
+  display: grid;
+  grid-template-columns: var(--persent, 50%) 1fr;
+  width: 280px;
+  padding: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    padding: 0 0 101px 0;
+  }
+}
+
+.slider__picture {
+  grid-row: 1 / 2;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__picture--before {
+  grid-column: 1 / 2;
+}
+
+.slider__picture--after {
+  grid-column: 2 / 3;
+  justify-content: flex-end;
+}
+
+.slider__range {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+}
+
+.slider__button-line {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: end;
+  background-color: var(--gray-semi-dark);
+  width: 4px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(50%);
+  pointer-events: none;
+}
+
+.slider__button-line::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--gray-semi-dark);
+  border-radius: 50%;
+  background: url("../img/slider-arrows.svg") no-repeat center center var(--color-input-bg);
+}

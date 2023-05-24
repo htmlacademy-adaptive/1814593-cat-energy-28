@@ -26,12 +26,12 @@
   --gray-darker: #222222;
   --gray-deep: #111111;
   // Акцентные цвета
-  --bright: rgb(104, 183, 56);
+  --bright: rgb(105, 184, 56);
   --bright-deep: #5eaa2f;
   --danger: #ff8282;
   // Цвета по назначению
   --color-font: #000000;
-  --color-btn-font: #ffffff;
+  --color-btn-font: rgb(255, 255, 255);
   --color-text-font: var(--gray-dark);
   --color-address-font: var(--gray-deep);
   --color-btn-bg: var(--bright);
@@ -43,4 +43,5 @@
   --color-input-bg: #ffffff;
   --color-input-border: var(--gray-light);
   --color-input-border-special: var(--gray);
+  --color-border-nav: #e6e6e6;
 }

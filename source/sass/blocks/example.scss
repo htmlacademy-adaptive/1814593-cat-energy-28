@@ -1,10 +1,20 @@
 .example {
   background-color: var(--color-bg-special);
 
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $transparent 619px, var(--color-bg-special) 619px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, $transparent 136px, var(--color-bg-blocks) 136px);
+  }
+}
+
+.example__box {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
   }
 }
 
@@ -18,7 +28,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    margin-bottom: 76px;
+    padding: 0;
+    margin-bottom: 146px;
   }
 }
 
@@ -38,19 +49,23 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    padding: 70px 0 69px 0;
+    width: 436px;
+    margin: 0 0 69px 0;
   }
 }
 
 .example__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    display: block;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -59,12 +74,32 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 162px);
+    gap: 42px;
+    margin: 0 0 47px 0;
+  }
 }
 
 .example__term {
   font-weight: 400;
   font-size: 24px;
   line-height: lh(24, 24);
+  text-align: center;
+  border: 1px solid var(--color-input-border-special);
+  border-radius: 3px;
+  padding: 13px 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 0 19px 0;
+    font-size: 30px;
+    line-height: lh(37, 30);
+  }
 }
 
 .example__definition {
@@ -73,7 +108,23 @@
   font-size: 12px;
   line-height: lh(12, 12);
   color: var(--color-text-font);
-  margin: 0;
+  text-align: center;
+  background-color: var(--color-bg-special);
+  width: 87px;
+  margin: -10px auto 0;
+  padding: 0 6px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    background-color: var(--color-input-bg);
+    font-size: 14px;
+    line-height: lh(14, 14);
+    width: 146px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: var(--color-bg-blocks);
+    padding: 0;
+  }
 }
 
 .example__text-info {
@@ -81,12 +132,45 @@
   font-size: 14px;
   line-height: lh(20, 14);
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    align-self: center;
+    font-size: 20px;
+    line-height: lh(20, 20);
+    width: 177px;
+    text-align: end;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    align-self: center;
+    text-align: start;
+    width: 366px;
+  }
+}
+
+.example__cost {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 63px;
+  }
 }
 
 .example__slider {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
-    grid-row: 1 / -1;
+    grid-row: 1 / 4;
   }
 }

@@ -12,6 +12,15 @@
   padding: 10px 12px;
   display: block;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: var(--bright-deep);
+  }
+
+  &:active {
+    background-color: var(--bright-deep);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .btn-link--bg {

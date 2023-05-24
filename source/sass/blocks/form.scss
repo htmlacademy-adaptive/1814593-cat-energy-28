@@ -19,7 +19,8 @@
 }
 
 .form__group--pet-info {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -27,7 +28,15 @@
 }
 
 .form__group--program-type {
-  margin-bottom: 19px;
+  padding-bottom: 24px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid var(--color-input-border);
+    padding: 30px 28px;
+    margin-bottom: 75px;
+  }
+
 
   @media (min-width: $desktop-width) {
     grid-column: -2 / -1;
@@ -35,12 +44,16 @@
 }
 
 .form__group--contacts {
+  margin-bottom: 24px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
 }
 
 .form__group--comment {
+  margin-bottom: 23px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
   }
@@ -63,6 +76,12 @@
   grid-template-columns: max-content 1fr;
   gap: 13px;
   position: relative;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+  }
 }
 
 .form__label--programs {
@@ -80,20 +99,30 @@
   text-transform: uppercase;
   color: var(--color-text-font);
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+  }
 }
 
 .form__input {
-  padding: 14px 0 13px 20px;
-  border: 1px solid var(--color-input-border);
-  width: 100%;
-}
-
-.form__input::placeholder {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: lh(18, 16);
   text-transform: uppercase;
+  padding: 14px 0 13px 20px;
+  border: 1px solid var(--color-input-border);
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+  }
+}
+
+.form__input::placeholder {
   color: var(--color-text-font);
 }
 
@@ -121,6 +150,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -130,7 +160,10 @@
   }
 }
 
-.form__item--program,
+.form__item--program {
+  justify-self: start;
+}
+
 .form__item--additional {
   justify-self: start;
 }
@@ -165,10 +198,9 @@
 
 .form__input[type="checkbox"]:checked + .form__control-mark::before {
   content: "";
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: var(--color-btn-bg);
+  width: 18px;
+  height: 14px;
+  background: url("../img/green-check.svg") no-repeat center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -181,41 +213,59 @@
   line-height: lh(26, 24);
   color: var(--color-font);
   margin-bottom: 40px;
+  position: relative;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: lh(36, 36);
+    margin-bottom: 76px;
+  }
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: var(--bright);
+  box-shadow: 100vw 0 var(--bright);
+  z-index: -1;
 }
 
 .form__text-comment {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: lh(18, 16);
+  text-transform: uppercase;
   width: 100%;
   border: 1px solid var(--color-input-border);
   overflow: hidden;
   min-height: 150px;
   resize: vertical;
   outline: none;
+  padding-left: 15px;
+  padding-top: 9px;
+
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
     min-height: 174px;
   }
 }
 
 .form__text-comment::placeholder {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: lh(18, 16);
-  text-transform: uppercase;
   color: var(--color-text-font);
-}
-
-.form__text {
-  font-family: var(--additional-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: lh(16, 14);
-  margin: 0;
 }
 
 .form__btn-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 21px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -232,6 +282,20 @@
 .form__btn-link {
   @media (min-width: $tablet-width) {
     width: 100%;
+    justify-self: start;
+  }
+}
+
+.form__text {
+  font-family: var(--additional-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: lh(16, 14);
+  margin: 0;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
     justify-self: start;
   }
 }

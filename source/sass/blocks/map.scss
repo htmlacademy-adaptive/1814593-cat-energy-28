@@ -1,1 +1,24 @@
-// скоро здесь будут стили, наверно)))
+.map {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.map__figure {
+  justify-self: center;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.map__image {
+  width: 320px;
+  height: 362px;
+}
+
+.map__iframe {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  border: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}

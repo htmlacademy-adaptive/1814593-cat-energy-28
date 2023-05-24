@@ -90,6 +90,14 @@
   @media (min-width: $desktop-width) {
     color: var(--color-menu);
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__link--active::after {

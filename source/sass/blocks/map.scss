@@ -3,10 +3,15 @@
   grid-template-columns: 1fr;
 }
 
-.map__image {
+.map__figure {
   justify-self: center;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+}
+
+.map__image {
+  width: 320px;
+  height: 362px;
 }
 
 .map__iframe {

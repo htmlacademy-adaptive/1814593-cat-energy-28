@@ -30,6 +30,10 @@
     bottom: 0;
     background: #61a439 url("../img/green-cat-desktop.png") no-repeat left bottom / 1044px 696px;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background: #61a439 url("../img/green-cat-desktop@2x.png") no-repeat left bottom / 1044px 696px;
+    }
   }
 }
 
@@ -76,7 +80,7 @@
   }
 }
 
-.nutrition__image {
+.nutrition__figure {
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
@@ -87,7 +91,24 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    left: calc(50% - 162px);
+    top: 32px;
     margin: 0;
+  }
+}
+
+.nutrition__image {
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
   }
 }
 

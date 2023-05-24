@@ -77,6 +77,11 @@
   gap: 13px;
   position: relative;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+  }
 }
 
 .form__label--programs {
@@ -94,20 +99,30 @@
   text-transform: uppercase;
   color: var(--color-text-font);
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+  }
 }
 
 .form__input {
-  padding: 14px 0 13px 20px;
-  border: 1px solid var(--color-input-border);
-  width: 100%;
-}
-
-.form__input::placeholder {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: lh(18, 16);
   text-transform: uppercase;
+  padding: 14px 0 13px 20px;
+  border: 1px solid var(--color-input-border);
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
+  }
+}
+
+.form__input::placeholder {
   color: var(--color-text-font);
 }
 
@@ -202,6 +217,8 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: lh(36, 36);
     margin-bottom: 76px;
   }
 }
@@ -219,27 +236,30 @@
 }
 
 .form__text-comment {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: lh(18, 16);
+  text-transform: uppercase;
   width: 100%;
   border: 1px solid var(--color-input-border);
   overflow: hidden;
   min-height: 150px;
   resize: vertical;
   outline: none;
+  padding-left: 15px;
+  padding-top: 9px;
+
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(30, 20);
     min-height: 174px;
   }
 }
 
 .form__text-comment::placeholder {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: lh(18, 16);
-  text-transform: uppercase;
   color: var(--color-text-font);
-  padding-left: 15px;
-  padding-top: 9px;
 }
 
 .form__btn-wrapper {

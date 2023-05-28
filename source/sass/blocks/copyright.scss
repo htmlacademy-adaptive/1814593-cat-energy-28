@@ -2,17 +2,30 @@
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link::after {
   content: "";
   width: 27px;
   height: 34px;
-  background: url("../img/logo-copyright.svg") no-repeat center center;
+  mask: url("../img/sprite.svg#logo-copyright") no-repeat center;
+  background-color: var(--gray-semi-dark);
 
   @media (min-width: $tablet-width) {
     margin-left: 28px;
   }
+}
+
+.copyright__link:hover::after {
+  background-color: var(--bright);
+}
+
+.copyright__link:active::after {
+  background-color: var(--bright);
 }
 
 .copyright__title {

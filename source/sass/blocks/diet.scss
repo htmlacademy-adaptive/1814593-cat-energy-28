@@ -16,6 +16,7 @@
   padding: 22px 20px 18px 20px;
   display: grid;
   grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
   column-gap: 10px;
 
   @media (min-width: $tablet-width) {
@@ -56,7 +57,7 @@
   width: 68px;
   height: 56px;
   grid-column: 1 / 2;
-  background: var(--bgi) var(--bgpg, center) var(--bgpv, center) no-repeat, radial-gradient(circle, var(--bright) 24px, $transparent 25px);
+  background: var(--bgi) var(--bgpg, center) var(--bgpv, center) / var(--bgs) no-repeat, radial-gradient(circle, var(--bright) 24px, $transparent 25px);
 
   @media (min-width: $tablet-width) {
     grid-column: -2 / -1;
@@ -76,7 +77,8 @@
 }
 
 .diet__item--slim {
-  --bgi: url("../img/cat-slim.svg");
+  --bgi: url("../img/sprite.svg#cat-slim");
+  --bgs: 36px 50px;
   --bgpv: top;
 
   @media (min-width: $tablet-width) {
@@ -89,7 +91,8 @@
 }
 
 .diet__item--pro {
-  --bgi: url("../img/cat-pro.svg");
+  --bgi: url("../img/sprite.svg#cat-pro");
+  --bgs: 68px 28px;
   --bgpg: left;
 
   @media (min-width: $tablet-width) {
@@ -150,6 +153,6 @@
   content: "";
   width: 24px;
   height: 12px;
-  background: url("../img/icon-arrow.svg");
+  background: url("../img/sprite.svg#icon-arrow");
   align-self: center;
 }

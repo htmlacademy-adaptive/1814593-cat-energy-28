@@ -37,7 +37,7 @@
 }
 
 .nav--opened ~ .burger {
-  background: url("../img/burger-cross.svg") no-repeat center center var(--color-btn-font);
+  background: url("../img/sprite.svg#burger-cross") no-repeat center center var(--color-btn-font);
 }
 
 .nav--nojs {

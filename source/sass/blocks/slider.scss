@@ -57,5 +57,5 @@
   align-items: center;
   border: 2px solid var(--gray-semi-dark);
   border-radius: 50%;
-  background: url("../img/slider-arrows.svg") no-repeat center center var(--color-input-bg);
+  background: url("../img/sprite.svg#slider-arrows") no-repeat center center / 24px 18px  var(--color-input-bg);
 }

@@ -48,6 +48,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    margin-bottom: 70px;
   }
 }
 
@@ -56,6 +57,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    margin-bottom: 67px;
   }
 }
 
@@ -126,6 +128,15 @@
   color: var(--color-text-font);
 }
 
+.form__input--email {
+  background: url("../img/sprite.svg#email-icon") right 15px center / 20px 20px no-repeat;
+}
+
+.form__input--phone {
+  background: url("../img/sprite.svg#phone-icon") right 15px center / 20px 20px no-repeat;
+}
+
+
 .form__list {
   @include list-reset;
   display: grid;
@@ -184,6 +195,11 @@
   border-radius: 0;
 }
 
+.form__label:focus-within .form__control-mark {
+  outline: 2px solid var(--bright);
+  outline-offset: 2px;
+}
+
 .form__input[type="radio"]:checked + .form__control-mark::before {
   content: "";
   width: 13px;
@@ -200,7 +216,7 @@
   content: "";
   width: 18px;
   height: 14px;
-  background: url("../img/green-check.svg") no-repeat center;
+  background: url("../img/sprite.svg#green-check") no-repeat center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -215,11 +231,13 @@
   margin-bottom: 40px;
   position: relative;
   background-color: #ffffff;
+  box-shadow: 0 0 0 21px #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: lh(36, 36);
     margin-bottom: 76px;
+    box-shadow: 0 0 0 40px #ffffff;
   }
 }
 
@@ -233,6 +251,11 @@
   background-color: var(--bright);
   box-shadow: 100vw 0 var(--bright);
   z-index: -1;
+}
+
+.form__br::after {
+  content: "\A";
+  white-space: pre;
 }
 
 .form__text-comment {

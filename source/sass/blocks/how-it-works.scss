@@ -25,7 +25,8 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    gap: 0 30px;
+    grid-template-rows: min-content 1fr;
+    gap: 30px;
   }
 }
 
@@ -34,12 +35,12 @@
   width: 60px;
   height: 60px;
   display: inline-block;
-  background: var(--color-btn-bg) var(--bgi) no-repeat center center;
+  background: var(--color-btn-bg) var(--bgi) no-repeat center center / 26px 31px;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    align-self: center;
+    margin-top: 35px;
   }
 }
 
@@ -58,19 +59,19 @@
 }
 
 .how-it-works__item--leaf {
-  --bgi: url("../img/icon-leaf.svg");
+  --bgi: url("../img/sprite.svg#icon-leaf");
 }
 
 .how-it-works__item--powder {
-  --bgi: url("../img/icon-powder.svg");
+  --bgi: url("../img/sprite.svg#icon-powder");
 }
 
 .how-it-works__item--cutlery {
-  --bgi: url("../img/icon-cutlery.svg");
+  --bgi: url("../img/sprite.svg#icon-cutlery");
 }
 
 .how-it-works__item--scales {
-  --bgi: url("../img/icon-scales.svg");
+  --bgi: url("../img/sprite.svg#icon-scales");
 }
 
 .how-it-works__text {

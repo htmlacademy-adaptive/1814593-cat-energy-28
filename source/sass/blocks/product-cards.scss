@@ -45,8 +45,32 @@
 .product-cards__title {
   font-weight: 400;
   font-size: 24px;
+  width: fit-content;
   line-height: lh(24, 24);
   color: var(--color-font);
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 21px 0 0 0 #ffffff, -21px 0 0 0 #ffffff;
+
+  @media (min-width: $tablet-width) {
+    line-height: lh(36, 36);
+    margin-bottom: 76px;
+    box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
+    padding: 0;
+  }
+}
+
+
+.product-cards__title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: var(--bright);
+  box-shadow: 100vw 0 var(--bright);
+  z-index: -1;
 }
 
 

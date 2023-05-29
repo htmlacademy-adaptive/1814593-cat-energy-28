@@ -22,14 +22,19 @@
   padding-bottom: 24px;
   margin-bottom: 28px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
+    margin-bottom: 45px;
   }
 }
 
 .form__group--program-type {
   padding-bottom: 24px;
-  margin-bottom: 26px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid var(--color-input-border);
@@ -40,11 +45,16 @@
 
   @media (min-width: $desktop-width) {
     grid-column: -2 / -1;
+    margin-bottom: 65px;
   }
 }
 
 .form__group--contacts {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
@@ -55,6 +65,10 @@
 .form__group--comment {
   margin-bottom: 23px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     margin-bottom: 67px;
@@ -64,8 +78,13 @@
 .form__group--additional {
   margin-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    margin-bottom: 66px;
   }
 }
 
@@ -88,10 +107,32 @@
 
 .form__label--programs {
   padding: 0 0 0 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 60px;
+  }
 }
 
 .form__label--options {
   padding: 0 0 0 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 60px;
+  }
+}
+
+.form__label--contacts {
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+  }
 }
 
 .form__signature {
@@ -121,6 +162,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: lh(30, 20);
+    padding: 10px 0 7px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    padding: 10px 0 7px 20px;
   }
 }
 
@@ -141,15 +188,20 @@
   @include list-reset;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 23px;
+  gap: 11px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
+    gap: 23px;
   }
 }
 
 .form__list--contacts {
-  gap: 20px;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -158,10 +210,12 @@
 }
 
 .form__list--additional {
+  gap: 24px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 64px;
+    gap: 44px 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -173,6 +227,11 @@
 
 .form__item--program {
   justify-self: start;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__item--additional {
@@ -189,6 +248,11 @@
   border: 1px solid var(--color-input-border-special);
   border-radius: 50%;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__control-mark--checkbox {
@@ -210,6 +274,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__input[type="checkbox"]:checked + .form__control-mark::before {
@@ -228,7 +297,7 @@
   font-size: 24px;
   line-height: lh(26, 24);
   color: var(--color-font);
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 0 0 21px #ffffff;
@@ -238,6 +307,7 @@
     line-height: lh(36, 36);
     margin-bottom: 76px;
     box-shadow: 0 0 0 40px #ffffff;
+    padding: 0;
   }
 }
 
@@ -251,11 +321,31 @@
   background-color: var(--bright);
   box-shadow: 100vw 0 var(--bright);
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+  }
+}
+
+.form__title--additional {
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .form__br::after {
   content: "\A";
   white-space: pre;
+
+  @media (min-width: $tablet-width) {
+    white-space: normal;
+  }
 }
 
 .form__text-comment {
@@ -271,7 +361,7 @@
   resize: vertical;
   outline: none;
   padding-left: 15px;
-  padding-top: 9px;
+  padding-top: 13px;
 
 
   @media (min-width: $tablet-width) {
@@ -304,8 +394,19 @@
 
 .form__btn-link {
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: lh(20, 20);
     width: 100%;
     justify-self: start;
+    padding: 16px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: lh(20, 20);
+    width: 100%;
+    justify-self: start;
+    padding: 16px 12px;
   }
 }
 
@@ -318,7 +419,14 @@
   justify-self: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: lh(16, 16);
     align-self: center;
     justify-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: lh(16, 16);
   }
 }

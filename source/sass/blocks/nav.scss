@@ -43,6 +43,10 @@
 .nav--nojs {
   display: block;
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -2 / -1;
+  }
 }
 
 .nav--nojs ~ .burger {

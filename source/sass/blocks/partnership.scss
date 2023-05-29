@@ -57,11 +57,22 @@
     text-align: end;
     margin-right: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin: 0;
+    margin-left: 35px;
+  }
 }
 
 .partnership__text span {
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: 15px;
   }
 }

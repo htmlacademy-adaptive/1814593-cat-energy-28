@@ -6,6 +6,11 @@
     padding: 65px 0 0 0;
     margin: 0 0 54px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 0 0 0;
+    margin: 0 0 56px 0;
+  }
 }
 
 .program__text {
@@ -22,6 +27,10 @@
     width: 323px;
     margin: 0 0 66px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 66px 0;
+  }
 }
 
 .program__form {
@@ -33,6 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 40px;
+    padding: 0;
+    margin-bottom: 82px;
   }
 }

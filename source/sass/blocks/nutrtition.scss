@@ -100,6 +100,7 @@
 .nutrition__image {
   width: 280px;
   height: 270px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -113,7 +114,7 @@
 }
 
 .nutrition__btn-link {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     width: 244px;

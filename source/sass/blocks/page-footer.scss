@@ -60,6 +60,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     justify-self: start;
+    padding-top: 67px;
+    padding-bottom: 67px;
   }
 }
 

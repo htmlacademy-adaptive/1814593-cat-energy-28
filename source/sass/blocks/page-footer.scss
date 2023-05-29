@@ -17,10 +17,12 @@
 
 .page-footer__partnership {
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    padding-top: 59px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,13 +62,16 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     justify-self: start;
-    padding-top: 67px;
-    padding-bottom: 67px;
+    padding-top: 49px;
+    padding-bottom: 68px;
   }
 }
 
 .page-footer__logo {
+  padding: 18px 0;
+
   @media (min-width: $tablet-width) {
+    padding: 0;
     justify-self: start;
   }
 }
@@ -81,9 +86,11 @@
 
 .page-footer__copyright {
   margin-bottom: 40px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
     align-self: center;
     justify-self: end;
   }

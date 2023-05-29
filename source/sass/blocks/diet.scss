@@ -20,9 +20,9 @@
   column-gap: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 62px 57px 52px;
+    padding: 80px 26px 58px 53px;
     grid-template-columns: 1fr min-content;
-    column-gap: 54px;
+    column-gap: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,8 +110,8 @@
   font-size: 14px;
   line-height: lh(18, 14);
   color: var(--color-text-font);
-  margin: 0 0 15px 0;
-  padding: 19px 0 23px 0;
+  margin: 0 0 29px 0;
+  padding: 19px 0 25px 0;
   border-bottom: 1px solid var(--grayish);
   grid-column: 1 / -1;
 
@@ -124,6 +124,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    padding: 27px 0 25px 0;
+    margin: 0 0 3px 0;
   }
 }
 

@@ -1,5 +1,5 @@
 .how-it-works__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 43px 0;
 }
 
 .how-it-works__list {
@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 137px;
+    gap: 37px 64px;
     counter-reset: points;
   }
 
@@ -85,6 +85,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: lh(24, 16);
+    width: 245px;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     z-index: 2;

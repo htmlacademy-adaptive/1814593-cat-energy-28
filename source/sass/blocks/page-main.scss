@@ -1,17 +1,20 @@
 .page-main__nutrition {
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    padding-top: 4px;
   }
 }
 
 .page-main__diet {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +30,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 61px;
   }
 }
